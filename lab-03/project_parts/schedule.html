@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Завдання 3 — Розклад</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .content {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        a {
+            color: #074481;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .day {
+            margin: 40px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 700px;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #074481;
+            color: white;
+        }
+
+        td {
+            background-color: #eaf4ff;
+        }
+
+        .week2 th {
+            background-color: #6a3db8;
+        }
+
+        .week2 td {
+            background-color: #f1eaff;
+        }
+
+        .free th {
+            background-color: #16833b;
+        }
+
+        .free td {
+            background-color: #eaffef;
+        }
+
+        .picture {
+            width: 400px;
+            height: 400px;
+            margin: 20px auto;
+        }
+
+        .picture img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Розклад занять та вільного часу</h1>
+
+    <div class="content">
+
+        <!-- Список днів тижня з якірними посиланнями -->
+        <ul>
+            <li><a href="#monday">Понеділок</a></li>
+            <li><a href="#tuesday">Вівторок</a></li>
+            <li><a href="#wednesday">Середа</a></li>
+            <li><a href="#thursday">Четвер</a></li>
+            <li><a href="#friday">П'ятниця</a></li>
+            <li><a href="#saturday">Субота</a></li>
+            <li><a href="#sunday">Неділя</a></li>
+        </ul>
+
+
+        <!-- ПОНЕДІЛОК -->
+        <div class="day" id="monday">
+            <h2>Понеділок</h2>
+            <h3>Перший тиждень</h3>
+            <table>
+                <tr>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>Аудиторія</th>
+                </tr>
+                <tr>
+                    <td>08:30–10:05</td>
+                    <td>Веб-технології</td>
+                    <td>201</td>
+                </tr>
+                <tr>
+                    <td>10:15–11:50</td>
+                    <td>Програмування</td>
+                    <td>305</td>
+                </tr>
+            </table>
+
+            <h3>Другий тиждень</h3>
+            <table class="week2">
+                <tr>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>Аудиторія</th>
+                </tr>
+                <tr>
+                    <td>08:30–10:05</td>
+                    <td>Бази даних</td>
+                    <td>204</td>
+                </tr>
+                <tr>
+                    <td>10:15–11:50</td>
+                    <td>Комп'ютерні мережі</td>
+                    <td>301</td>
+                </tr>
+            </table>
+
+            <div class="picture">
+                <img src="../img/images.jpg" alt="Понеділок">
+            </div>
+        </div>
+
+
+        <!-- ВІВТОРОК -->
+        <div class="day" id="tuesday">
+            <h2>Вівторок</h2>
+            <h3>Перший тиждень</h3>
+            <table>
+                <tr>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>Аудиторія</th>
+                </tr>
+                <tr>
+                    <td>10:15–11:50</td>
+                    <td>Математика</td>
+                    <td>105</td>
+                </tr>
+                <tr>
+                    <td>12:00–13:35</td>
+                    <td>Англійська мова</td>
+                    <td>210</td>
+                </tr>
+            </table>
+
+            <h3>Другий тиждень</h3>
+            <table class="week2">
+                <tr>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>Аудиторія</th>
+                </tr>
+                <tr>
+                    <td>10:15–11:50</td>
+                    <td>Фізика</td>
+                    <td>107</td>
+                </tr>
+                <tr>
+                    <td>12:00–13:35</td>
+                    <td>Програмування</td>
+                    <td>305</td>
+                </tr>
+            </table>
+
+            <div class="picture">
+                <img src="../img/images.jpg" alt="Вівторок">
+            </div>
+        </div>
+
+
+        <!-- СЕРЕДА -->
+        <div class="day" id="wednesday">
+            <h2>Середа</h2>
+            <h3>Перший тиждень</h3>
+            <table>
+                <tr>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>Аудиторія</th>
+                </tr>
+                <tr>
+                    <td>08:30–10:05</td>
+                    <td>Операційні системи</td>
+                    <td>302</td>
+                </tr>
+                <tr>
+                    <td>10:15–11:50</td>
+                    <td>Веб-технології</td>
+                    <td>201</td>
+                </tr>
+            </table>
+
+            <h3>Другий тиждень</h3>
+            <table class="week2">
+                <tr>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>Аудиторія</th>
+                </tr>
+                <tr>
+                    <td>08:30–10:05</td>
+                    <td>Алгоритми</td>
+                    <td>303</td>
+                </tr>
+                <tr>
+                    <td>10:15–11:50</td>
+                    <td>Бази даних</td>
+                    <td>204</td>
+                </tr>
+            </table>
+
+            <div class="picture">
+                <img src="../img/images.jpg" alt="Середа">
+            </div>
+        </div>
+
+
+        <!-- ЧЕТВЕР -->
+        <div class="day" id="thursday">
+            <h2>Четвер</h2>
+            <h3>Перший тиждень</h3>
+            <table>
+                <tr>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>Аудиторія</th>
+                </tr>
+                <tr>
+                    <td>10:15–11:50</td>
+                    <td>Комп'ютерні мережі</td>
+                    <td>301</td>
+                </tr>
+                <tr>
+                    <td>12:00–13:35</td>
+                    <td>Програмування</td>
+                    <td>305</td>
+                </tr>
+            </table>
+
+            <h3>Другий тиждень</h3>
+            <table class="week2">
+                <tr>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>Аудиторія</th>
+                </tr>
+                <tr>
+                    <td>10:15–11:50</td>
+                    <td>Математика</td>
+                    <td>105</td>
+                </tr>
+                <tr>
+                    <td>12:00–13:35</td>
+                    <td>Веб-технології</td>
+                    <td>201</td>
+                </tr>
+            </table>
+
+            <div class="picture">
+                <img src="../img/images.jpg" alt="Четвер">
+            </div>
+        </div>
+
+
+        <!-- П'ЯТНИЦЯ -->
+        <div class="day" id="friday">
+            <h2>П'ятниця</h2>
+            <h3>Перший тиждень</h3>
+            <table>
+                <tr>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>Аудиторія</th>
+                </tr>
+                <tr>
+                    <td>08:30–10:05</td>
+                    <td>Англійська мова</td>
+                    <td>210</td>
+                </tr>
+                <tr>
+                    <td>10:15–11:50</td>
+                    <td>Фізична культура</td>
+                    <td>Спортзал</td>
+                </tr>
+            </table>
+
+            <h3>Другий тиждень</h3>
+            <table class="week2">
+                <tr>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>Аудиторія</th>
+                </tr>
+                <tr>
+                    <td>08:30–10:05</td>
+                    <td>Основи екології</td>
+                    <td>112</td>
+                </tr>
+                <tr>
+                    <td>10:15–11:50</td>
+                    <td>Веб-технології</td>
+                    <td>201</td>
+                </tr>
+            </table>
+
+            <div class="picture">
+                <img src="../img/images.jpg" alt="П'ятниця">
+            </div>
+        </div>
+
+
+        <!-- СУБОТА (Розклад вільного часу за класом .free) -->
+        <div class="day" id="saturday">
+            <h2>Субота</h2>
+            <h3>Вільний час та хобі</h3>
+            <table class="free">
+                <tr>
+                    <th>Час</th>
+                    <th>Активність</th>
+                    <th>Місце</th>
+                </tr>
+                <tr>
+                    <td>10:00–14:00</td>
+                    <td>Самоосвіта та курси</td>
+                    <td>Вдома</td>
+                </tr>
+                <tr>
+                    <td>16:00–19:00</td>
+                    <td>Прогулянка / Спорт</td>
+                    <td>Парк</td>
+                </tr>
+            </table>
+
+            <div class="picture">
+                <img src="../img/images.jpg" alt="Субота">
+            </div>
+        </div>
+
+
+        <!-- НЕДІЛЯ (Розклад вільного часу за класом .free) -->
+        <div class="day" id="sunday">
+            <h2>Неділя</h2>
+            <h3>Відпочинок</h3>
+            <table class="free">
+                <tr>
+                    <th>Час</th>

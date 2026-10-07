@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Завдання 1 — Таблиця</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 470px;
+            height: 470px;
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 0;
+        }
+
+        .turquoise {
+            background-color: #20e6c4;
+        }
+
+        .yellow {
+            background-color: #fffed0;
+        }
+
+        .red {
+            background-color: #ff1720;
+        }
+
+        .blue {
+            background-color: #1934e8;
+        }
+
+        .green {
+            background-color: #20f52b;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Завдання 1 — Таблиця</h1>
+
+<table>
+    <!-- РЯДОК 1: Зовнішня верхня смуга -->
+    <tr>
+        <td class="turquoise" colspan="8" height="47"></td>
+    </tr>
+
+    <!-- РЯДОК 2: Середня верхня смуга + зовнішні бічні стінки -->
+    <tr>
+        <td class="yellow" rowspan="8"></td>
+        <td class="turquoise" colspan="6" height="47"></td>
+        <td class="yellow" rowspan="8"></td>
+    </tr>
+
+    <!-- РЯДОК 3: Внутрішня верхня смуга + середні бічні стінки -->
+    <tr>
+        <td class="yellow" rowspan="6"></td>
+        <td class="turquoise" colspan="4" height="47"></td>
+        <td class="yellow" rowspan="6"></td>
+    </tr>
+
+    <!-- РЯДОК 4: Верхня межа центру + внутрішні бічні стінки -->
+    <tr>
+        <td class="yellow" rowspan="4"></td>
+        <td class="turquoise" colspan="2" height="47"></td>
+        <td class="yellow" rowspan="4"></td>
+    </tr>
+
+    <!-- РЯДОК 5: Центр (Червона та Синя комірки) -->
+    <tr>
+        <td class="red" height="47"></td>
+        <td class="blue"></td>
+    </tr>
+
+    <!-- РЯДОК 6: Центр (Зелена та Жовта комірки) -->
+    <tr>
+        <td class="green" height="47"></td>
+        <td class="yellow"></td>
+    </tr>
+
+    <!-- РЯДОК 7: Внутрішня нижня смуга -->
+    <tr>
+        <td class="turquoise" colspan="2" height="47"></td>
+    </tr>
+
+    <!-- РЯДОК 8: Середня нижня смуга -->
+    <tr>
+        <td class="turquoise" colspan="4" height="47"></td>
+    </tr>
+
+    <!-- РЯДОК 9: Зовнішня нижня смуга всередині першого шару -->
+    <tr>
+        <td class="turquoise" colspan="6" height="47"></td>
+    </tr>
+
+    <!-- РЯДОК 10: Найнижча суцільна смуга -->
+    <tr>
+        <td class="turquoise" colspan="8" height="47"></td>
+    </tr>
+</table>
+
+<!-- Вимога лабораторної: посилання відцентроване за допомогою inline-стилю -->
+<p style="text-align: center;">
+    <a href="../index.html">Повернутись на головну</a>
+</p>
+
+</body>
+</html>

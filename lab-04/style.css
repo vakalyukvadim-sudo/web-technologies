@@ -1,0 +1,203 @@
+* {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+p {
+    color: green;
+    text-align: center;
+}
+
+div {
+    text-align: justify;
+}
+
+.red-text {
+    color: red;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+#second-paragraph {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.custom-shadow {
+    text-shadow: 5px -5px 3px #999999;
+}
+
+.uppercase-strike {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-indent: 50px;
+}
+
+.modern-spacing {
+    letter-spacing: 30px;
+    word-spacing: 50px;
+}
+
+.recipe-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h1 {
+    color: #ff5b2d;
+    font-size: 32px;
+    border-bottom: 3px double #ff5b2d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #074481;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.ingredients-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.ingredients-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.ingredient-name {
+    font-weight: 700;
+    color: #111111;
+}
+
+.note {
+    font-style: italic;
+    color: #666666;
+    font-size: 16px;
+}
+
+.accent-weight {
+    color: #ff1720;
+    font-weight: bold;
+}
+
+.optional-text {
+    font-weight: bold;
+    background-color: #fffed0;
+    padding: 2px 5px;
+}
+
+#recipe-footer-tip {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #eaf4ff;
+    border-left: 5px solid #074481;
+    font-style: italic;
+    font-size: 16px;
+    color: #074481;
+    text-align: justify;
+}
+
+.menu-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.menu-container a {
+    color: purple;
+}
+
+.menu-container a.main-item {
+    color: green;
+}
+
+.fruits-square-list {
+    list-style-type: square !important;
+}
+
+.vegetables-list ul {
+    list-style-image: url('https://picsum.photos') !important;
+}
+
+ul ul ul {
+    list-style-type: none;
+}
+
+.fruits-square-list a, .berries-list a {
+    text-decoration: none;
+}
+
+.misc-ordered-list, .misc-ordered-list ol {
+    list-style-position: inside;
+}
+
+p.text-background span {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div .text-background span {
+    background-color: yellow;
+}
+
+span span {
+    background-color: gray;
+    text-decoration: line-through;
+}
+
+ol span span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section > p {
+    text-shadow: 3px 3px 5px #777777;
+    text-indent: 50px;
+}
+
+li > ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li > ul li {
+    background-image: url('img/grogu-marker.jpeg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 16px;
+    padding-left: 30px;
+}
+
+
+div > p.text-background {
+    word-spacing: 50px;
+}
+
+.text-bold > p {
+    font-weight: bold;
+}
+
+div.text-bold > section > p {
+    line-height: 45px;
+}
+
+img + p {
+    background-color: brown;
+}
+
+section ~ p {
+    color: red;
+}

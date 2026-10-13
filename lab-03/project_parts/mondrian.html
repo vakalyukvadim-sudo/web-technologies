@@ -3,82 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Завдання 2 — Картина Мондріана</title>
-
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-
-        table {
-            border-collapse: collapse;
-            margin: 30px auto;
-            width: 500px;
-            height: 500px;
-            /* Зовнішня жирна рамка картини */
-            border: 8px solid #000000; 
-        }
-
-        td {
-            /* Жирні чорні лінії розділення комірок */
-            border: 8px solid #000000;
-            padding: 0;
-        }
-
-        /* Кольори точно за вашим зразком */
-        .white { background-color: #ffffff; }
-        .yellow { background-color: #fffa69; }
-        .blue { background-color: #074481; }
-        .red { background-color: #ff5b2d; }
-        .black { background-color: #000000; }
-    </style>
 </head>
-
 <body>
 
+<center>
     <h1>Композиція з червоним, синім і жовтим</h1>
 
-    <table>
-        <!-- РЯДОК 1: Верхня частина (Червоний та Жовтий блоки) -->
+    <table border="8" cellspacing="0" width="500" height="500">
         <tr>
-            <td class="white" rowspan="2" style="width: 15%;"></td>
-            <td class="red" rowspan="2" style="width: 45%;"></td>
-            <td class="white" style="width: 15%; height: 70px;"></td>
-            <td class="yellow" style="width: 25%;"></td>
+            <td bgcolor="#ffffff" rowspan="2" width="15%"></td>
+            <td bgcolor="#ff5b2d" rowspan="2" width="45%"></td>
+            <td bgcolor="#ffffff" width="15%" height="70"></td>
+            <td bgcolor="#fffa69" width="25%"></td>
         </tr>
 
-        <!-- РЯДОК 2: Зона під жовтим квадратом -->
         <tr>
-            <td class="white" style="height: 150px;"></td>
-            <td class="white"></td>
+            <td bgcolor="#ffffff" height="150"></td>
+            <td bgcolor="#ffffff"></td>
         </tr>
 
-        <!-- РЯДОК 3: Середня частина (Чорний квадрат та білі блоки) -->
         <tr>
-            <td class="white" style="height: 120px;"></td>
-            <td class="black" rowspan="2"></td>
-            <td class="white" colspan="2"></td>
+            <td bgcolor="#ffffff" height="120"></td>
+            <td bgcolor="#000000" rowspan="2"></td>
+            <td bgcolor="#ffffff" colspan="2"></td>
         </tr>
 
-        <!-- РЯДОК 4: Нижня частина (Синій блок праворуч та жовтий ліворуч) -->
         <tr>
-            <td class="yellow" rowspan="2"></td>
-            <td class="blue" colspan="2" style="height: 80px;"></td>
+            <td bgcolor="#fffa69" rowspan="2"></td>
+            <td bgcolor="#074481" colspan="2" height="80"></td>
         </tr>
 
-        <!-- РЯДОК 5: Найнижчий рядок (Біла комірка по центру під чорною) -->
         <tr>
-            <td class="white" style="height: 60px;"></td>
-            <td class="white" colspan="2"></td>
+            <td bgcolor="#ffffff" height="60"></td>
+            <td bgcolor="#ffffff" colspan="2"></td>
         </tr>
     </table>
 
-    <!-- Обов'язкова умова лабораторної для посилання -->
-    <p style="text-align: center;">
-        <a href="../index.html">Повернутись на головну</a>
-    </p>
+    <p><a href="../index.html">Повернутись на головну</a></p>
+</center>
 
 </body>
 </html>

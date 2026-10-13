@@ -4,101 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Завдання 3 — Розклад</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        .content {
-            width: 800px;
-            margin: 0 auto;
-        }
-
-        ul {
-            display: inline-block;
-            text-align: left;
-        }
-
-        li {
-            margin: 10px;
-        }
-
-        a {
-            color: #074481;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .day {
-            margin: 40px 0;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 700px;
-            margin: 20px auto;
-        }
-
-        th,
-        td {
-            border: 2px solid black;
-            padding: 12px;
-        }
-
-        th {
-            background-color: #074481;
-            color: white;
-        }
-
-        td {
-            background-color: #eaf4ff;
-        }
-
-        .week2 th {
-            background-color: #6a3db8;
-        }
-
-        .week2 td {
-            background-color: #f1eaff;
-        }
-
-        .free th {
-            background-color: #16833b;
-        }
-
-        .free td {
-            background-color: #eaffef;
-        }
-
-        .picture {
-            width: 400px;
-            height: 400px;
-            margin: 20px auto;
-        }
-
-        .picture img {
-            width: 400px;
-            height: 400px;
-            object-fit: cover;
-        }
-    </style>
 </head>
 
 <body>
 
+<center>
     <h1>Розклад занять та вільного часу</h1>
 
-    <div class="content">
+    <div width="800">
 
         <!-- Список днів тижня з якірними посиланнями -->
-        <ul>
+        <ul align="left" style="display: inline-block;">
             <li><a href="#monday">Понеділок</a></li>
             <li><a href="#tuesday">Вівторок</a></li>
             <li><a href="#wednesday">Середа</a></li>
@@ -108,16 +25,15 @@
             <li><a href="#sunday">Неділя</a></li>
         </ul>
 
-
         <!-- ПОНЕДІЛОК -->
-        <div class="day" id="monday">
+        <div id="monday">
             <h2>Понеділок</h2>
             <h3>Перший тиждень</h3>
-            <table>
-                <tr>
-                    <th>Час</th>
-                    <th>Предмет</th>
-                    <th>Аудиторія</th>
+            <table border="2" cellspacing="0" width="700" bgcolor="#eaf4ff">
+                <tr bgcolor="#074481">
+                    <th><font color="white">Час</font></th>
+                    <th><font color="white">Предмет</font></th>
+                    <th><font color="white">Аудиторія</font></th>
                 </tr>
                 <tr>
                     <td>08:30–10:05</td>
@@ -132,11 +48,11 @@
             </table>
 
             <h3>Другий тиждень</h3>
-            <table class="week2">
-                <tr>
-                    <th>Час</th>
-                    <th>Предмет</th>
-                    <th>Аудиторія</th>
+            <table border="2" cellspacing="0" width="700" bgcolor="#f1eaff">
+                <tr bgcolor="#6a3db8">
+                    <th><font color="white">Час</font></th>
+                    <th><font color="white">Предмет</font></th>
+                    <th><font color="white">Аудиторія</font></th>
                 </tr>
                 <tr>
                     <td>08:30–10:05</td>
@@ -150,21 +66,20 @@
                 </tr>
             </table>
 
-            <div class="picture">
-                <img src="../img/images.jpg" alt="Понеділок">
+            <div>
+                <img src="../img/images.jpg" alt="Понеділок" width="400" height="400">
             </div>
         </div>
 
-
         <!-- ВІВТОРОК -->
-        <div class="day" id="tuesday">
+        <div id="tuesday">
             <h2>Вівторок</h2>
             <h3>Перший тиждень</h3>
-            <table>
-                <tr>
-                    <th>Час</th>
-                    <th>Предмет</th>
-                    <th>Аудиторія</th>
+            <table border="2" cellspacing="0" width="700" bgcolor="#eaf4ff">
+                <tr bgcolor="#074481">
+                    <th><font color="white">Час</font></th>
+                    <th><font color="white">Предмет</font></th>
+                    <th><font color="white">Аудиторія</font></th>
                 </tr>
                 <tr>
                     <td>10:15–11:50</td>
@@ -179,11 +94,11 @@
             </table>
 
             <h3>Другий тиждень</h3>
-            <table class="week2">
-                <tr>
-                    <th>Час</th>
-                    <th>Предмет</th>
-                    <th>Аудиторія</th>
+            <table border="2" cellspacing="0" width="700" bgcolor="#f1eaff">
+                <tr bgcolor="#6a3db8">
+                    <th><font color="white">Час</font></th>
+                    <th><font color="white">Предмет</font></th>
+                    <th><font color="white">Аудиторія</font></th>
                 </tr>
                 <tr>
                     <td>10:15–11:50</td>
@@ -197,21 +112,20 @@
                 </tr>
             </table>
 
-            <div class="picture">
-                <img src="../img/images.jpg" alt="Вівторок">
+            <div>
+                <img src="../img/images.jpg" alt="Вівторок" width="400" height="400">
             </div>
         </div>
 
-
         <!-- СЕРЕДА -->
-        <div class="day" id="wednesday">
+        <div id="wednesday">
             <h2>Середа</h2>
             <h3>Перший тиждень</h3>
-            <table>
-                <tr>
-                    <th>Час</th>
-                    <th>Предмет</th>
-                    <th>Аудиторія</th>
+            <table border="2" cellspacing="0" width="700" bgcolor="#eaf4ff">
+                <tr bgcolor="#074481">
+                    <th><font color="white">Час</font></th>
+                    <th><font color="white">Предмет</font></th>
+                    <th><font color="white">Аудиторія</font></th>
                 </tr>
                 <tr>
                     <td>08:30–10:05</td>
@@ -226,11 +140,11 @@
             </table>
 
             <h3>Другий тиждень</h3>
-            <table class="week2">
-                <tr>
-                    <th>Час</th>
-                    <th>Предмет</th>
-                    <th>Аудиторія</th>
+            <table border="2" cellspacing="0" width="700" bgcolor="#f1eaff">
+                <tr bgcolor="#6a3db8">
+                    <th><font color="white">Час</font></th>
+                    <th><font color="white">Предмет</font></th>
+                    <th><font color="white">Аудиторія</font></th>
                 </tr>
                 <tr>
                     <td>08:30–10:05</td>
@@ -244,21 +158,20 @@
                 </tr>
             </table>
 
-            <div class="picture">
-                <img src="../img/images.jpg" alt="Середа">
+            <div>
+                <img src="../img/images.jpg" alt="Середа" width="400" height="400">
             </div>
         </div>
 
-
         <!-- ЧЕТВЕР -->
-        <div class="day" id="thursday">
+        <div id="thursday">
             <h2>Четвер</h2>
             <h3>Перший тиждень</h3>
-            <table>
-                <tr>
-                    <th>Час</th>
-                    <th>Предмет</th>
-                    <th>Аудиторія</th>
+            <table border="2" cellspacing="0" width="700" bgcolor="#eaf4ff">
+                <tr bgcolor="#074481">
+                    <th><font color="white">Час</font></th>
+                    <th><font color="white">Предмет</font></th>
+                    <th><font color="white">Аудиторія</font></th>
                 </tr>
                 <tr>
                     <td>10:15–11:50</td>
@@ -273,11 +186,11 @@
             </table>
 
             <h3>Другий тиждень</h3>
-            <table class="week2">
-                <tr>
-                    <th>Час</th>
-                    <th>Предмет</th>
-                    <th>Аудиторія</th>
+            <table border="2" cellspacing="0" width="700" bgcolor="#f1eaff">
+                <tr bgcolor="#6a3db8">
+                    <th><font color="white">Час</font></th>
+                    <th><font color="white">Предмет</font></th>
+                    <th><font color="white">Аудиторія</font></th>
                 </tr>
                 <tr>
                     <td>10:15–11:50</td>
@@ -291,21 +204,20 @@
                 </tr>
             </table>
 
-            <div class="picture">
-                <img src="../img/images.jpg" alt="Четвер">
+            <div>
+                <img src="../img/images.jpg" alt="Четвер" width="400" height="400">
             </div>
         </div>
 
-
         <!-- П'ЯТНИЦЯ -->
-        <div class="day" id="friday">
+        <div id="friday">
             <h2>П'ятниця</h2>
             <h3>Перший тиждень</h3>
-            <table>
-                <tr>
-                    <th>Час</th>
-                    <th>Предмет</th>
-                    <th>Аудиторія</th>
+            <table border="2" cellspacing="0" width="700" bgcolor="#eaf4ff">
+                <tr bgcolor="#074481">
+                    <th><font color="white">Час</font></th>
+                    <th><font color="white">Предмет</font></th>
+                    <th><font color="white">Аудиторія</font></th>
                 </tr>
                 <tr>
                     <td>08:30–10:05</td>
@@ -320,11 +232,11 @@
             </table>
 
             <h3>Другий тиждень</h3>
-            <table class="week2">
-                <tr>
-                    <th>Час</th>
-                    <th>Предмет</th>
-                    <th>Аудиторія</th>
+            <table border="2" cellspacing="0" width="700" bgcolor="#f1eaff">
+                <tr bgcolor="#6a3db8">
+                    <th><font color="white">Час</font></th>
+                    <th><font color="white">Предмет</font></th>
+                    <th><font color="white">Аудиторія</font></th>
                 </tr>
                 <tr>
                     <td>08:30–10:05</td>
@@ -338,44 +250,38 @@
                 </tr>
             </table>
 
-            <div class="picture">
-                <img src="../img/images.jpg" alt="П'ятниця">
+            <div>
+                <img src="../img/images.jpg" alt="П'ятниця" width="400" height="400">
             </div>
         </div>
 
-
-        <!-- СУБОТА (Розклад вільного часу за класом .free) -->
-        <div class="day" id="saturday">
+        <!-- СУБОТА -->
+        <div id="saturday">
             <h2>Субота</h2>
-            <h3>Вільний час та хобі</h3>
-            <table class="free">
-                <tr>
-                    <th>Час</th>
-                    <th>Активність</th>
-                    <th>Місце</th>
+            <h3>Вільний час</h3>
+            <table border="2" cellspacing="0" width="700" bgcolor="#eaffef">
+                <tr bgcolor="#16833b">
+                    <th><font color="white">Час</font></th>
+                    <th><font color="white">Активність</font></th>
+                    <th><font color="white">Місце</font></th>
                 </tr>
                 <tr>
                     <td>10:00–14:00</td>
-                    <td>Самоосвіта та курси</td>
+                    <td>Курси та самоосвіта</td>
                     <td>Вдома</td>
                 </tr>
                 <tr>
                     <td>16:00–19:00</td>
-                    <td>Прогулянка / Спорт</td>
+                    <td>Прогулянка та відпочинок</td>
                     <td>Парк</td>
                 </tr>
             </table>
 
-            <div class="picture">
-                <img src="../img/images.jpg" alt="Субота">
+            <div>
+                <img src="../img/images.jpg" alt="Субота" width="400" height="400">
             </div>
         </div>
 
-
-        <!-- НЕДІЛЯ (Розклад вільного часу за класом .free) -->
-        <div class="day" id="sunday">
+        <!-- НЕДІЛЯ -->
+        <div id="sunday">
             <h2>Неділя</h2>
-            <h3>Відпочинок</h3>
-            <table class="free">
-                <tr>
-                    <th>Час</th>

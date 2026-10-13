@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 4 — Завдання 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="text-bold">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Прямий абзац в div.text-bold.</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Абзац в section, який є прямим нащадком div.text-bold.</p>
+        </section>
+    </div>
+
+    <div>
+        <p class="text-background">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <span>Цей span всередині p з класом text-background.</span>
+            <span>Lorem ipsum dolor sit amet. <span>Цей span всередині іншого span.</span></span>
+        </p>
+        <div class="text-background">
+            <span>Цей span всередині класу text-background, який знаходиться в div.</span>
+        </div>
+    </div>
+
+    <ol>
+        <li>
+            <span>Lorem ipsum dolor sit amet. <span>Цей span всередині іншого span в нумерованому списку.</span></span>
+        </li>
+    </ol>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Абзац в тезі section тільки на першому рівні вкладеності.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Абзац на другому рівні вкладеності.</p>
+        </div>
+    </section>
+
+    <ul>
+        <li>
+            Lorem ipsum dolor sit amet.
+            <ul>
+                <li>Елемент ul, який розташований безпосередньо в li.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="text-background-container">
+        <div>
+            <p class="text-background">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Абзац з класом text-background на першому рівні в div.</p>
+        </div>
+    </div class="text-background-container">
+
+  <img src="img/grogu-marker.jpeg" alt="Зображення" width="100">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Абзац розташований відразу ж за елементом img.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Наступний абзац після картинки.</p>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Секція для перевірки сусідніх елементів.</p>
+    </section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Абзац розташований після елемента section на тому ж рівні.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ще один абзац розташований після елемента section на тому ж рівні.</p>
+
+</body>
+</html>

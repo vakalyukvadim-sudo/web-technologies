@@ -1,0 +1,102 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.main-list {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+
+.main-list > li {
+    background-color: rgb(103, 158, 128);
+    margin-bottom: 10px;
+    padding-left: 50px;
+    background-image: url("icons/luggage.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+
+.main-list > li:nth-child(2) {
+    background-image: url("icons/festival.png");
+}
+
+.main-list > li > span {
+    display: inline-block;
+    background-color: rgb(199, 124, 106);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.sub-list {
+    list-style: none;
+    padding: 0 20px 0 40px;
+    margin: 0;
+}
+
+.sub-list li {
+    background-color: rgb(153, 180, 102);
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 35px 35px;
+}
+
+.sub-list li span {
+    display: inline-block;
+    background-color: rgb(218, 106, 32);
+    padding: 10px 20px;
+    margin-left: 40px;
+}
+
+.main-list > li:first-child .sub-list li:nth-child(1) {
+    background-image: url("icons/map.png");
+}
+
+.main-list > li:first-child .sub-list li:nth-child(2) {
+    background-image: url("icons/flight.png");
+}
+
+.main-list > li:first-child .sub-list li:nth-child(3) {
+    background-image: url("icons/hotel.png");
+}
+
+.main-list > li:first-child .sub-list li:nth-child(4) {
+    background-image: url("icons/car.png");
+}
+
+.main-list > li:nth-child(2) .sub-list li:nth-child(1) {
+    background-image: url("icons/bar.png");
+}
+
+.main-list > li:nth-child(2) .sub-list li:nth-child(2) {
+    background-image: url("icons/casino.png");
+}
+
+.main-list > li:nth-child(2) .sub-list li:nth-child(3) {
+    background-image: url("icons/museum.png");
+}
+
+.main-list > li:nth-child(2) .sub-list li:nth-child(4) {
+    background-image: url("icons/festival.png");
+}

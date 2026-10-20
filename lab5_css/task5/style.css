@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef4ff;
+    color: #243b53;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2457a7;
+}
+
+h2 {
+    color: #2457a7;
+    margin-top: 40px;
+}
+
+/* 1. BOX-SIZING */
+
+section div {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #2457a7;
+    margin: 20px;
+    background-color: #cfe2ff;
+    vertical-align: top;
+}
+
+section div:nth-of-type(1) {
+    box-sizing: content-box;
+    /* Загальна ширина: 300 + 40 + 10 = 350px */
+}
+
+section div:nth-of-type(2) {
+    box-sizing: border-box;
+    /* Загальна ширина: 300px */
+}
+
+/* 2. OVERFLOW */
+
+article div {
+    max-height: 80px;
+    border: 2px solid #2457a7;
+    background-color: #dceaff;
+    padding: 10px;
+    margin: 20px 0;
+    width: 300px
+}
+
+article div:nth-of-type(1) {
+    overflow: visible;
+    margin-bottom: 150px;
+}
+
+article div:nth-of-type(2) {
+    overflow: hidden;
+}
+
+article div:nth-of-type(3) {
+    overflow: scroll;
+}
+
+article div:nth-of-type(4) {
+    overflow: auto;
+}
+
+/* 3. DISPLAY */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    background-color: #cfe2ff;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #2457a7;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #173d78;
+}
+
+nav li:nth-child(4) {
+    display: none;
+    /*
+    display: none повністю прибирає елемент
+    зі сторінки, і він не займає місця.
+
+    На відміну від visibility: hidden,
+    при якому елемент невидимий,
+    але його місце зберігається.
+    */
+}

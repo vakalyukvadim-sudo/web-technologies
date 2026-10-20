@@ -1,0 +1,156 @@
+
+/* Основний фон сторінки */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-color: #8ca6a0;
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Головний контейнер */
+main {
+    max-width: 900px;
+    min-width: 320px;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+}
+
+/*
+Якщо ширина вікна стане меншою за 320px,
+контейнер не зменшиться нижче 320px через
+min-width. Тому може з'явитися горизонтальна
+прокрутка сторінки.
+*/
+
+header, footer {
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    color: #234b40;
+}
+
+h2 {
+    color: #285e50;
+    border-bottom: 2px solid #285e50;
+    padding-bottom: 8px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+section {
+    margin: 30px 0;
+}
+
+/* 1. Властивість display */
+
+/* П'ять div перетворюємо на рядкові елементи */
+.inline-tags {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.inline-tags div {
+    display: inline;
+
+    width: 200px;
+    height: 100px;
+
+    background-color: #b9dfcf;
+    border: 1px solid #285e50;
+    padding: 5px;
+}
+
+/*
+Для display: inline властивості width і height
+не задають розміри елемента, оскільки він
+є рядковим і займає місце за розміром тексту.
+*/
+
+/* П'ять span перетворюємо на блокові елементи */
+.block-tags span {
+    display: block;
+    width: 150px;
+
+    background-color: #cde5f5;
+    border: 1px solid #31749d;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* 2. Повторення фонового зображення */
+
+/* Усі чотири блоки використовують одну картинку */
+.repeat-box {
+    height: 200px;
+    border: 2px solid #333;
+    background-color: #f2f2f2;
+    background-image: url("img/pattern.jpeg");
+    margin-bottom: 20px;
+}
+
+.repeat-x {
+    background-repeat: repeat-x;
+}
+
+.repeat-y {
+    background-repeat: repeat-y;
+}
+
+.repeat-space {
+    background-repeat: space;
+}
+
+.repeat-round {
+    background-repeat: round;
+}
+
+/*
+space — повторює зображення без зміни його
+розміру, розподіляючи вільний простір між копіями.
+
+round — повторює зображення, змінюючи його
+розмір так, щоб копії заповнили блок без проміжків.
+*/
+
+/* 3. Масштабування фонового зображення */
+
+.size-box {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #333;
+
+    background-color: #e5e5e5;
+    background-image: url("img/photo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-bottom: 20px;
+}
+
+.size-contain {
+    background-size: contain;
+}
+
+.size-cover {
+    background-size: cover;
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 2px solid #285e50;
+    color: #555;
+}

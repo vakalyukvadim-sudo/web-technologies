@@ -41,70 +41,77 @@ div {
     word-spacing: 50px;
 }
 
-.recipe-container {
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 25px;
+.recipe-border-box {
+    max-width: 800px;
+    margin: 40px auto;
+    border: 1px solid #000000;
+    padding: 10px;
     background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-h1 {
-    color: #ff5b2d;
-    font-size: 32px;
-    border-bottom: 3px double #ff5b2d;
-    padding-bottom: 10px;
+.recipe-page {
+    text-align: center;
+    padding: 30px;
+}
+
+.recipe-page h1 {
+    font-family: Arial, sans-serif;
+    color: red;
+    font-size: 38px;
+    text-align: center;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
-h2 {
-    color: #074481;
-    font-size: 22px;
+.recipe-page h2 {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.recipe-page p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    color: black;
+    text-align: center;
+    margin: 4px 0;
+}
+
+.recipe-page p b {
+    font-weight: bold;
+}
+
+.recipe-page p u {
+    text-decoration: underline;
+}
+
+.recipe-page p mark {
+    background-color: yellow;
+    color: black;
+}
+
+.recipe-line {
+    border: none;
+    border-top: 6px solid green;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.recipe-page .recipe-footer {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    line-height: 1.6;
     margin-top: 20px;
 }
 
-.ingredients-list {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.ingredients-list li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #444444;
-}
-
-.ingredient-name {
-    font-weight: 700;
-    color: #111111;
-}
-
-.note {
+.recipe-page .recipe-footer i {
     font-style: italic;
-    color: #666666;
-    font-size: 16px;
-}
-
-.accent-weight {
-    color: #ff1720;
-    font-weight: bold;
-}
-
-.optional-text {
-    font-weight: bold;
-    background-color: #fffed0;
-    padding: 2px 5px;
-}
-
-#recipe-footer-tip {
-    margin-top: 30px;
-    padding: 15px;
-    background-color: #eaf4ff;
-    border-left: 5px solid #074481;
-    font-style: italic;
-    font-size: 16px;
-    color: #074481;
-    text-align: justify;
 }
 
 .menu-container {
@@ -181,7 +188,6 @@ li > ul li {
     padding-left: 30px;
 }
 
-
 div > p.text-background {
     word-spacing: 50px;
 }
@@ -194,7 +200,7 @@ div.text-bold > section > p {
     line-height: 45px;
 }
 
-img + p {
+img + p span span {
     background-color: brown;
 }
 
